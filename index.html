@@ -1,53 +1,133 @@
 <!DOCTYPE html>
-<html lang="eng">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ntswaki Kekana Portfolio</title>
-		<link rel="stylesheet" href="styles.css">
-<style>
-body{
-	background-color: #1a1a1a;
-	color: #f5f5f5;
-	font-family: Arial, sans-serif;
-	overflow: hidden;
-	position: relative;
-}
-.container{
-	text-align: center;
-	position: relative;
-	z-index: 10;
-}
-.profile-img{
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	border: 3px solid #f5f5f5;
-}
-.btn{
-	background-color: #333;
-	color:#f5f5f5;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 5px;
-	display: inline block;
-	transition: 0.3s;
-}
-.btn:hover{
-	background-color: #555;
-}
-.animated-bg{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	z-index: 0;
-}
-.animated-bg div{
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-color: rgba
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ntswaki Kekana | Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ntswaki Kekana</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+        <img src="ntswaki.jpg" alt="Ntswaki Kekana" class="profile-photo" />
+
+        <p id="greeting" class="tagline"></p>
+
+      <h2>Hi, I'm Ntswaki 👋</h2>
+      <p class="tagline">Frontend Developer & ALX Graduate</p>
+      <p>I build clean, responsive websites and solve real-world problems with code. I’ve completed one of the toughest software engineering programs — the ALX SE Program — and I’m just getting started.</p>
+      <a href="https://github.com/ntswakikekana" target="_blank" class="cta">View My Work</a>
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>🚀 About Me</h2>
+    <p>I’m a passionate frontend developer who graduated from ALX in November 2024. My journey through ALX has shaped me into a resilient, solution-driven developer who thrives on challenges. I specialize in HTML5, CSS, JavaScript, React, Express.js, Node.js, Python and I love crafting seamless user experiences. I'm looking for real-world opportunities to turn ideas into products.</p>
+    <ul>
+      <li><strong>✅ Completed over 50+ projects</strong> (HTML, CSS, JS, Linux, Git, React, Python, Express.js, Node.js and Flask)</li>
+      <li><strong>🧠 Built scalable frontend layouts</strong> under tight deadlines</li>
+      <li><strong>🌍 Collaborated with teams</strong> on GitHub & open-source contributions</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>🚀 Skills & Technologies</h2>
+    <p>These are the technologies I work with:</p>
+  
+    <div class="skill-icons">
+      <div class="skill"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+      <div class="skill"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+      <div class="skill"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      <div class="skill"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+      <div class="skill"><i class="devicon-react-original colored"></i><p>React</p></div>
+      <div class="skill"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
+    </div>
+  </section>
+  <a href="assets/ntswaki-kekana-cv.pdf" download class="cta download-btn">
+    <i class="fas fa-download"></i> Download CV
+  </a>
+  
+  
+  <section id="projects" class="projects">
+    <h2>🛠️ Projects</h2>
+    <div class="project-card">
+      <h3>📁 Portfolio Website</h3>
+      <p>My personal website built with HTML, CSS & JS — designed to reflect my journey, skills, and vision.</p>
+      <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+    </div>
+
+    <section id="projects" class="projects">
+        <h2>💻 Projects</h2>
+        <p>Here are some of the real-world projects I built during my ALX Software Engineering journey:</p>
+      
+        <div class="project-grid">
+      
+          <div class="project-card">
+            <h3>Printf</h3>
+            <p>A collaboration program that uses the printf() to create a custom printf()</p>
+            <a href="https://github.com/SiphepheloKhanyile/printf" target="_blank">View on GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>ALX  low-level_programming</h3>
+            <p>Introduction to low level programming.</p>
+            <a href="https://github.com/ntswaki1934/alx-low_level_programming" target="_blank">View on GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>AirBnB Clone</h3>
+            <p>A full-stack clone of the AirBnB platform (backend + front-end), created collaboratively using OOP and REST APIs.</p>
+            <a href="https://github.com/ntswakikekana/AirBnB_clone" target="_blank">View on GitHub</a>
+          </div>
+          
+          <div class="project-card">
+            <h3>ALX-React</h3>
+            <p>Introduction to React.</p>
+            <a href="https://github.com/ntswakikekana/alx-react" target="_blank">View on GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>ALX-interview</h3>
+            <p>Interview preparation programs.</p>
+            <a href="https://github.com/ntswakikekana/alx-interview" target="_blank">View on GitHub</a>
+          </div>
+      
+          <div class="project-card">
+            <h3>ALX Front End For Fun</h3>
+            <p>Alx's optional projects with HTML, CSS, and SCSS.</p>
+            <a href="https://github.com/ntswakikekana/alx-frontend-for-fun" target="_blank">View on GitHub</a>
+          </div>
+      
+        </div>
+      </section>
+      
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📬 Get In Touch</h2>
+    <p>I'm currently open to opportunities! Whether you're a recruiter, a fellow dev, or just curious — let's connect.</p>
+    <p><strong>Email:</strong> ntswaki1934@gmail.com</p>
+    <p><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/ntswaki-kekana-3012772b0/</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ntswaki Kekana | Built with ❤️ and grit.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
