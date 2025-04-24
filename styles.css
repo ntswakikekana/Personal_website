@@ -1,0 +1,227 @@
+:root {
+    --main-color: black;
+    --accent-color: #ffa500;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-stack);
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: var(--main-color);
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: var(--accent-color);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background: white;
+    color: var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .cta:hover {
+    background: #eee;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about ul {
+    list-style: square;
+    padding-left: 1.5rem;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-left: 5px solid var(--main-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  
+  .contact a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  footer {
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* === Mobile-first responsiveness === */
+@media (max-width: 768px) {
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1rem auto;
+      display: block;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .cta {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  
+    section {
+      padding: 2rem 1rem;
+    }
+  
+    .project {
+      margin: 1rem auto;
+      max-width: 100%;
+      text-align: center;
+    }
+}
+  .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .skill {
+    text-align: center;
+  }
+  
+  .skill i {
+    font-size: 3rem;
+    transition: transform 0.3s;
+  }
+  
+  .skill i:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill p {
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+  .download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #005fa3;
+  }
